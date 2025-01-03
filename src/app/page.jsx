@@ -19,7 +19,7 @@ export default function Home() {
           transition={{ duration: 0.5 }}
           className="text-center mb-12"
         >
-          <h1 className="text-4xl font-bold mb-4 text-gray-800 dark:text-white">John Doe</h1>
+          <h1 className="text-4xl font-bold mb-4 text-gray-800 dark:text-white">Muneeb Malik</h1>
           <h2 className="text-2xl mb-6 text-gray-600 dark:text-gray-300">Web Developer & Designer</h2>
           <Image
             src="/placeholder.svg?height=200&width=200"
