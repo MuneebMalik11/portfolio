@@ -23,7 +23,7 @@ export default function Home() {
           <h2 className="text-2xl mb-6 text-gray-600 dark:text-gray-300">Web Developer & Designer</h2>
           <Image
             src="/placeholder.svg?height=200&width=200"
-            alt="John Doe"
+            alt="MALIK"
             width={200}
             height={200}
             className="rounded-full mx-auto mb-6"
