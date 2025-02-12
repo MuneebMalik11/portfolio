@@ -29,7 +29,7 @@ export default function Home() {
             className="rounded-full mx-auto mb-6"
           />
           <p className="text-lg text-gray-600 dark:text-gray-300 max-w-2xl mx-auto">
-            Passionate web developer with 5 years of experience in creating beautiful and functional websites. Specialized in React, Node.js, and modern web technologies.
+            Passionate web developer with 1 year of experience in creating beautiful and functional websites. Specialized in React, Node.js, and modern web technologies.
           </p>
         </motion.section>
 
@@ -41,7 +41,7 @@ export default function Home() {
         >
           <h2 className="text-3xl font-bold mb-6 text-gray-800 dark:text-white">Skills</h2>
           <div className="grid grid-cols-2 md:grid-cols-4 gap-4">
-            {['React', 'Node.js', 'JavaScript', 'HTML/CSS', 'TypeScript', 'GraphQL', 'Next.js', 'Tailwind CSS'].map((skill, index) => (
+            {['React', 'Node.js', 'JavaScript', 'HTML/CSS', 'TypeScript', 'MONGODB', 'Next.js', 'Tailwind CSS'].map((skill, index) => (
               <motion.div
                 key={skill}
                 initial={{ opacity: 0, scale: 0.8 }}
@@ -65,9 +65,9 @@ export default function Home() {
           <div className="grid grid-cols-1 md:grid-cols-2 gap-6">
             {[
               { title: 'E-commerce Website', description: 'A fully functional online store built with React and Node.js.' },
-              { title: 'Portfolio Website', description: 'A responsive portfolio website showcasing my skills and projects.' },
-              { title: 'Task Management App', description: 'A productivity app built with React and Firebase.' },
-              { title: 'Weather Dashboard', description: 'A real-time weather application using OpenWeatherMap API.' },
+              // { title: 'Portfolio Website', description: 'A responsive portfolio website showcasing my skills and projects.' },
+              // { title: 'Task Management App', description: 'A productivity app built with React and Firebase.' },
+              // { title: 'Weather Dashboard', description: 'A real-time weather application using OpenWeatherMap API.' },
             ].map((project, index) => (
               <motion.div
                 key={project.title}
@@ -82,6 +82,28 @@ export default function Home() {
             ))}
           </div>
         </motion.section>
+        
+        <h2 className="text-3xl font-bold mb-6 text-gray-800 dark:text-white">QUALIFICTIONS</h2>
+        <div className="grid grid-cols-1 md:grid-cols-2 gap-6">
+        {[
+              { title: 'Matric', description: 'i have completed my matric with science subjects' },
+              { title: 'Intermediate', description: 'i have completed my intermediate in Computer science' },
+              { title: 'ADC/B.COM', description: 'currently enroled in B.COM ' },
+            ].map((project, index) => (
+              <motion.div
+                key={project.title}
+                initial={{ opacity: 0, scale: 0.8 }}
+                animate={{ opacity: 1, scale: 1 }}
+                transition={{ duration: 0.3, delay: index * 0.1 }}
+                className="bg-white dark:bg-gray-800 rounded-lg p-6 shadow-md"
+              >
+                <h3 className="text-xl font-semibold mb-2 text-gray-800 dark:text-white">{project.title}</h3>
+                <p className="text-gray-600 dark:text-gray-300">{project.description}</p>
+              </motion.div>
+              ))}
+
+
+        </div>
       </main>
       <Footer />
     </div>

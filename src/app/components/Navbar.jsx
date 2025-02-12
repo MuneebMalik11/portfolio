@@ -17,8 +17,8 @@ export default function Navbar() {
           <Link href="/" className="text-xl font-bold text-gray-800 dark:text-white">
             MY PORTFOLIO
           </Link>
-          <div className="hidden md:flex space-x-4">
-            <NavItem href="/">Home</NavItem>
+          <div className=" text-white hidden md:flex space-x-4 ">
+            <NavItem href="/" >Home</NavItem>
             <NavItem href="/about">About</NavItem>
             <NavItem href="/blogs">Blogs</NavItem>
           </div>
@@ -58,7 +58,7 @@ function NavItem({ href, children, onClick }) {
     <motion.div whileHover={{ scale: 1.1 }} whileTap={{ scale: 0.95 }}>
       <Link
         href={href}
-        className="text-gray-600 dark:text-gray-300 hover:text-gray-800 dark:hover:text-white block px-3 py-2 rounded-md text-base font-medium"
+        className="text-white dark:text-gray-300 hover:text-gray-800 dark:hover:text-white block px-3 py-2 rounded-md text-base font-medium"
         onClick={onClick}
       >
         {children}
